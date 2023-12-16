@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlacedOrder">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_details"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvRestaurantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ordered from: Domino's"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFoodname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza"
+                    android:layout_marginEnd="20dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price: $10"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date: 12/1/2020"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:id="@+id/tvTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time: 8:00 PM"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address: Tulip Tree Apartments"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/trackOrderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/track_order" />
+
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

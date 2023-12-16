@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeScreen">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top Fragment -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/firstFragment"
+            android:name="ttbrowne.c323.finalandroidproject.HomeScreenTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" />
+
+        <!-- Bottom Fragment -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/secondFragment"
+            android:name="ttbrowne.c323.finalandroidproject.HomeScreenBottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

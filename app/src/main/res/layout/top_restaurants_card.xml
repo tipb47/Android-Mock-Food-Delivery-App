@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<data>
+    <variable
+        name="restaurant"
+        type="ttbrowne.c323.finalandroidproject.Restaurant" />
+</data>
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <Button
+        android:id="@+id/horizontalRestaurantButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{restaurant.name}" />
+
+</androidx.cardview.widget.CardView>
+
+</layout>

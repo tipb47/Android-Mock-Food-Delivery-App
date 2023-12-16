@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Food Delivery App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="new_account">New Account</string>
+    <string name="name">Name</string>
+    <string name="enter_your_name">Enter your name...</string>
+    <string name="email">Email</string>
+    <string name="enter_your_email">Enter your email...</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter your password...</string>
+    <string name="re_enter_your_password">Re-enter your password</string>
+    <string name="re_enter_your_password_dots">Re-enter your password...</string>
+    <string name="next">NEXT</string>
+    <string name="returning_account">Returning Account</string>
+    <string name="sign_in">Sign In</string>
+    <string name="not_registered_yet">Not registered yet?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_registered">Already registered?</string>
+    <string name="food_delivery_app">Food Delivery App</string>
+    <string name="calendar_view">Calendar View</string>
+    <string name="recent_orders">Recent Orders</string>
+    <string name="home">Home</string>
+    <string name="user_example_com">user@example.com</string>
+    <string name="user_name">User Name</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="search">Search</string>
+    <string name="all_restaurants">ALL RESTAURANTS</string>
+    <string name="favorite_restaurants">FAVORITE RESTAURANTS</string>
+    <string name="checkout">CHECKOUT</string>
+    <string name="food_item_name">Food Item Name</string>
+    <string name="minus">-</string>
+    <string name="plus">+</string>
+    <string name="address">Delivery Address</string>
+    <string name="special_instructions">Special Instructions</string>
+    <string name="modify_order">MODIFY ORDER</string>
+    <string name="place_order">PLACE ORDER</string>
+    <string name="order_details">Order Details</string>
+    <string name="track_order">TRACK ORDER</string>
+    <string name="order_this_again">Place this order again</string>
+</resources>

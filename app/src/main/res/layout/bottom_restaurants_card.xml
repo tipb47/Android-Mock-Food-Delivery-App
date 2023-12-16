@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="restaurant"
+            type="ttbrowne.c323.finalandroidproject.Restaurant" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/favRestaurantButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{restaurant.name}"
+            android:layout_gravity="center_horizontal" />
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

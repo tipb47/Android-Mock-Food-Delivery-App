@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/appSplash">
+
+    <include app:graph="@navigation/nav_drawer" />
+
+    <fragment
+        android:id="@+id/signUpScreen"
+        android:name="ttbrowne.c323.finalandroidproject.SignUpScreen"
+        android:label="fragment_sign_up_screen"
+        tools:layout="@layout/fragment_sign_up_screen" >
+        <action
+            android:id="@+id/action_signUpScreen_to_selfieCameraFragment"
+            app:destination="@id/selfieCameraFragment" />
+        <action
+            android:id="@+id/action_signUpScreen_to_signInScreen"
+            app:destination="@id/signInScreen" />
+        <action
+            android:id="@+id/action_signUpScreen_to_drawerContainer"
+            app:destination="@id/drawerContainer" />
+    </fragment>
+    <fragment
+        android:id="@+id/selfieCameraFragment"
+        android:name="ttbrowne.c323.finalandroidproject.SelfieCameraFragment"
+        android:label="fragment_selfie_camera"
+        tools:layout="@layout/fragment_selfie_camera" >
+        <action
+            android:id="@+id/action_selfieCameraFragment_to_signUpScreen"
+            app:destination="@id/signUpScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInScreen"
+        android:name="ttbrowne.c323.finalandroidproject.SignInScreen"
+        android:label="fragment_sign_in_screen"
+        tools:layout="@layout/fragment_sign_in_screen" >
+        <action
+            android:id="@+id/action_signInScreen_to_signUpScreen"
+            app:destination="@id/signUpScreen" />
+        <action
+            android:id="@+id/action_signInScreen_to_drawerContainer"
+            app:destination="@id/drawerContainer" />
+    </fragment>
+    <fragment
+        android:id="@+id/appSplash"
+        android:name="ttbrowne.c323.finalandroidproject.AppSplash"
+        android:label="fragment_app_splash"
+        tools:layout="@layout/fragment_app_splash" >
+        <action
+            android:id="@+id/action_appSplash_to_signUpScreen2"
+            app:destination="@id/signUpScreen" />
+        <action
+            android:id="@+id/action_appSplash_to_drawerContainer"
+            app:destination="@id/drawerContainer" />
+    </fragment>
+    <fragment
+        android:id="@+id/drawerContainer"
+        android:name="ttbrowne.c323.finalandroidproject.DrawerContainer"
+        android:label="fragment_drawer_container"
+        tools:layout="@layout/fragment_drawer_container" >
+        <action
+            android:id="@+id/action_drawerContainer_to_nav_drawer"
+            app:destination="@id/nav_drawer" />
+        <action
+            android:id="@+id/action_drawerContainer_to_signUpScreen"
+            app:destination="@id/signUpScreen" />
+        <action
+            android:id="@+id/action_drawerContainer_to_signUpScreen2"
+            app:destination="@id/signUpScreen" />
+    </fragment>
+</navigation>

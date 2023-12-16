@@ -1,0 +1,50 @@
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="ttbrowne.c323.finalandroidproject.AppViewModel" />
+    </data>
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/gray"
+        android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/header_avatar"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@{viewModel.avatarUri}"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/header_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{viewModel.user.name}"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/header_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@{viewModel.user.email}"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+
+</layout>
