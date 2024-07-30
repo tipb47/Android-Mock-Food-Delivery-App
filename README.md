@@ -1,6 +1,6 @@
 # Food Delivery App
 
-Sudo Food Delivery App where users can sign up/in, pick a restaurant, order food, and see where their food is coming from.
+Fake Food Delivery App where users can sign up/in, pick a restaurant, order food, and see where their food is coming from.
 
 ## Functionality 
 
